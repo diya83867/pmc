@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/home/yash/projects/pmc/static/css/style.css">
+    <link rel="stylesheet" href="/home/yash/projects/pmc/static/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/c45d113f2b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbarpcm bg-dark text-white position-fixed w-100 top-0 z-3" style="--bs-navbar-toggler-focus-width: unset;">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="/">
+                <div class="d-flex align-items-center">
+                    <img src="/home/yash/projects/pmc/static/img/PMC-logo.png" class="me-2 img-fluid" alt="logo"
+                        width="50" height="50" />
+                    <span>PLAN MY CAREER</span>
+                </div>
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation" style="padding: 0.1rem 0.25rem; background-color: #26ae61;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto justify-content-end me-5  w-100 ps-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fs-6" href="javascript:void(0)" aria-current="page">Home<span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-arrow-left text-white fs-6" href="#" id="dropdownId"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">Jobs</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId" data-bs-auto-close="false">
+                            <a class="dropdown-item" href="javascript:void(0)">Browse Jobs</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Job Income Hierarchy</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Internship</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-arrow-left text-white fs-6" href="javascript:void(0)"
+                            id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" data-bs-auto-close="outside">Career Tools</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="javascript:void(0)">Voice Discussion</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Career Road Map</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Interview</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Jugad Techniques</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-arrow-left text-white fs-6" href="javascript:void(0)"
+                            id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" data-bs-auto-close="outside">Education</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="javascript:void(0)">Universities</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Colleges</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Boards</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Schools</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Scholorships</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Internship</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Preparation</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-arrow-left text-white fs-6" href="javascript:void(0)"
+                            id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" data-bs-auto-close="outside">Resume</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="javascript:void(0)">Resume Writing</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Resume Guidlines</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Resume Samples</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-arrow-left text-white fs-6" href="javascript:void(0)"
+                            id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" data-bs-auto-close="outside">Career</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="javascript:void(0)">Information Technology</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Sports</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Computer Science</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Government Sector</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-6" href="javascript:void(0)">Success Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-6" href="javascript:void(0)">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-arrow-left text-white fs-6" href="javascript:void(0)"
+                            id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" data-bs-auto-close="outside">More</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="javascript:void(0)">About</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Privacy Policy</a>
+                            <a class="dropdown-item" href="javascript:void(0)">FAQ</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Contact</a>
+                        </div>
+                    </li>
+                    <li class="btn_group">
+                        <a class="btn btn-similar" href="javascript:void(0)">LOGIN</a>
+                        <a class="btn btn-similar" href="javascript:void(0)">SIGNUP</a>
+                    </li>
+                </ul>
+                <!-- <div class="d-flex my-sm-3">
+                    <button class="btn btn-similar me-2 rounded-5 px-4 ripple " type="button">LOGIN</button>
+                    <button class="btn btn-similar rounded-5 px-4 ripple" type="button">SIGNUP</button>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-12 col-xs-12">
+                        <div class="contents">
+                            <h2 class="hero-title mb-4 lh-base">Shape a Career That is a Dreamcatcher</h2>
+                            <p class="para">With your zeal and our knowledge, we will enable you to shape a career
+                                that will make your dreams come true.</p>
+                            <form class="searchbar mt-4" action="">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-10 col-md-10 col-xs-12">
+                                        <input type="text" class="form-control w-100 rounded-5" placeholder="Select your Dream Career">
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-xs-12">
+                                        <button class="contents-button btn-similar text-white rounded-5 border-0">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-xs-12">
+                        <div class="intro-img">
+                            <img class="w-100" src="/home/yash/projects/pmc/static/img/intro.png" alt="intro image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="category section">
+            <div class="container">
+                <div class="section-header text-center text-white position-relative mb-5">
+                    <h2 class="section-title fs-2 mb-0">Browse Categories</h2>
+                    <p>Choose Options from our Services</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-xs-6 browse-category text-center d-block bg-white overflow-hidden">
+                        <a href="javascript:void(0)">
+                            <div class="logos">
+                                <img class="text-center mb-1" src="/home/yash/projects/pmc/static/img/categoryicon/university.png">
+                            </div>
+                            <h3 class="lh-base fs-5">Universities</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-6 browse-category text-center d-block bg-white overflow-hidden">
+                        <a href="javascript:void(0)">
+                            <div class="logos">
+                                <img class="text-center mb-1" src="/home/yash/projects/pmc/static/img/categoryicon/college.png">
+                            </div>
+                            <h3 class="lh-base fs-5">Colleges</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-2 browse-category text-center d-block bg-white overflow-hidden">
+                        <a href="javascript:void(0)">
+                            <div class="logos">
+                                <img class="text-center mb-1" src="/home/yash/projects/pmc/static/img/categoryicon/boards.png">
+                            </div>
+                            <h3 class="lh-base fs-5">Boards</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-6 browse-category text-center d-block bg-white overflow-hidden">
+                        <a href="javascript:void(0)">
+                            <div class="logos">
+                                <img class="text-center mb-1" src="/home/yash/projects/pmc/static/img/categoryicon/school.png">
+                            </div>
+                            <h3 class="lh-base fs-5">Schools</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-6 browse-category text-center d-block bg-white overflow-hidden">
+                        <a href="javascript:void(0)">
+                            <div class="logos">
+                                <img class="text-center mb-1" src="/home/yash/projects/pmc/static/img/categoryicon/intern.png">
+                            </div>
+                            <h3 class="lh-base fs-5">Internships</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-6 browse-category text-center d-block bg-white overflow-hidden">
+                        <a href="javascript:void(0)">
+                            <div class="logos">
+                                <img class="text-center mb-1"  src="/home/yash/projects/pmc/static/img/categoryicon/scholarship.png">
+                            </div>
+                            <h3 class="lh-base fs-5">Scholarships</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-6 browse-category text-center d-block bg-white overflow-hidden">
+                        <a href="javascript:void(0)">
+                            <div class="logos">
+                                <img class="text-center mb-1" src="/home/yash/projects/pmc/static/img/categoryicon/preparation.png">
+                            </div>
+                            <h3 class="lh-base fs-5">Preparations</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-6 browse-category text-center d-block bg-white overflow-hidden">
+                        <a href="javascript:void(0)">
+                            <div class="logos">
+                                <img class="text-center mb-1" src="/home/yash/projects/pmc/static/img/categoryicon/job.png">
+                            </div>
+                            <h3 class="lh-base fs-5">Jobs</h3>
+                        </a>
+                    </div>
+                    <a class="category-btn w-100 text-center text-dark bg-white fs-5 lh-lg" href="javascript:void(0)">More <i class="fa-solid fa-angles-down fs-6"></i></a>
+                </div>
+            </div>
+        </section>
+        <div class="search-sections section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="text-wrapper mt-5">
+                            <div class="browse-button text-center">
+                                <h3 class="browse-heading mb-4 fs-2">That Endless World Of Career Opportunities</h3>
+                                <p class="browse-para mb-5">With a vast roster of career possibilities, choose the one
+                                    which suits your talent pool.
+                                </p>
+                                <a class="btn btn-similar" href="javascript:void(0)">Career options</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="intro-img">
+                            <img class="img-fluid w-100" src="/home/yash/projects/pmc/static/img/search.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="search-sections section">
+            <div class="section-header text-center text-white position-relative mb-5">
+                <h2 class="section-title fs-2 mb-0">Career Road Map <i class="bi bi-geo-alt fs-2"></i></h2>
+                <p>With us preplan a failproof path to success in your career which will make your true potential
+                    come out and make you a force to be reckoned with.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="text-wrapper mt-5">
+                            <div class="browse-button text-center">
+                                <h3 class="browse-heading mb-4 fs-2">The Path to Indomitable Success in Your Career</h3>
+                                <p class="browse-para mb-5">Venturing into unknown waters without proper knowledge will
+                                    make you a meal for crocodiles in the water. Search through our extensive base of
+                                    knowledge and find
+                                    the information which will help you to be successful.</p>
+                                <a class="btn btn-similar" href="javascript:void(0)">Search Career</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="intro-img">
+                            <img class="img-fluid w-100" src="/home/yash/projects/pmc/static/img/rm.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="search-sections section">
+            <div class="section-header text-center text-white position-relative mb-5">
+                <h2 class="section-title fs-2 mb-0">Money Is The Motivation, Money Is The Conversation</h2>
+                <p>Is your valuable investment of time and energy into a career going to reward you with enough
+                    returns for your efforts or are you doing futile work?
+                </p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="img-thumb">
+                            <img class="img-fluid" src="/home/yash/projects/pmc/static/img/job.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="text-wrapper mt-5">
+                            <div class="browse-button text-center">
+                                <h3 class="browse-heading mb-4 fs-2">Job Satisfaction</h3>
+                                <p class="browse-para mb-5">Are you settled cozily with your job, or are you hungry for
+                                    more? If you are looking for real growth, we can help you.
+                                </p>
+                                <a class="btn btn-similar" href="javascript:void(0)">Search jobs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="search-sections section">
+            <div class="section-header text-center text-white position-relative mb-5">
+                <h2 class="section-title fs-2 mb-0">Search Schools and Colleges</h2>
+                <p>PMC is here to Guide you the best Schools or Colleges at your desired place <br>
+                </p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="text-wrapper mt-5">
+                            <div class="browse-button text-center">
+                                <h3 class="browse-heading mb-4 fs-2">Search Best Schools And Colleges at Your Place</h3>
+                                <p class="browse-para mb-5">We provide the List of best among Schools and Colleges<br>
+                                    At your desired location</p>
+                                <a class="btn btn-similar" href="javascript:void(0)">Search Schools</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="img-thumb">
+                            <img class="img-fluid" src="/home/yash/projects/pmc/static/img/school.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="search-sections section">
+            <div class="section-header text-center text-white position-relative mb-5">
+                <h2 class="section-title fs-2 mb-0">Let Your Work Define You</h2>
+                <p>With our tools, sharpen your skills to a scalpel-like precision and be an artist at your work. A
+                    man’s worth is the man’s skills.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="work-process text-center">
+                            <span class="process-icon d-inline-block mb-2">
+                                <i class="bi bi-journal"></i>
+                            </span>
+                            <h4 class="fw-bold fs-5">Resume Writing</h4>
+                            <p>Create Resume with a proper format.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="work-process text-center">
+                            <span class="process-icon d-inline-block mb-2">
+                                <i class="bi bi-question-circle"></i>
+                            </span>
+                            <h4 class="fw-bold fs-5">Interview Questions</h4>
+                            <p>Practice the most asked Interview Questions by the Top companies</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="work-process text-center">
+                            <span class="process-icon d-inline-block mb-2">
+                                <i class="bi bi-mic"></i>
+                            </span>
+                            <h4 class="fw-bold fs-5">Voice Discussion</h4>
+                            <p>Discuss with the Experts or Ask your Queries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <section class="testimonial section">
+            <div class="container">
+                <div class="section-header text-center text-white position-relative mb-5">
+                    <h2 class="section-title fs-2 mb-0">Quotes</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators" style="bottom: -40px;">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active border border-2 rounded-circle car-btn" aria-current="true"
+                                    aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2" class="border border-2 rounded-circle car-btn"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3" class="border border-2 rounded-circle car-btn"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="testimonial-item text-center">
+                                        <div class="author d-inline-block mb-3">
+                                            <div class="img-thumb">
+                                                <img class="w-75 rounded-circle" src="/home/yash/projects/pmc/static/img/testimonial/img1.png">
+                                            </div>
+                                        </div>
+                                        <div class="content-inner">
+                                            <p class="description mb-2">Morbi quam enim, cursus non erat pretium veh icula
+                                                finibus ex
+                                                stibulum venenatis viverra dui Morbi quam enim, cursus non erat pretium veh
+                                                icula finibus ex stibulum venenatis viverra dui Morbi quam enim, cursus non
+                                                erat
+                                                pretium veh icula finibus ex stibulum venenatis viverra dui.</p>
+                                            <div class="author-info">
+                                                <h2 class="mb-0 fs-5 fw-bold lh-small"><a href="javascript:void(0)">Jessica</a></h2>
+                                                <span>Senior Accountant</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-item text-center">
+                                        <div class="author d-inline-block mb-3">
+                                            <div class="img-thumb">
+                                                <img class="w-75 rounded-circle" src="/home/yash/projects/pmc/static/img/testimonial/img2.png">
+                                            </div>
+                                        </div>
+                                        <div class="content-inner">
+                                            <p class="description mb-2">Morbi quam enim, cursus non erat pretium veh icula
+                                                finibus ex
+                                                stibulum venenatis viverra dui Morbi quam enim, cursus non erat pretium veh
+                                                icula finibus ex stibulum venenatis viverra dui Morbi quam enim, cursus non
+                                                erat
+                                                pretium veh icula finibus ex stibulum venenatis viverra dui.</p>
+                                            <div class="author-info">
+                                                <h2 class="mb-0 fs-5 fw-bold lh-small"><a href="javascript:void(0)">John Doe</a></h2>
+                                                <span>Project Menager</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-item text-center">
+                                        <div class="author d-inline-block mb-3">
+                                            <div class="img-thumb">
+                                                <img class="w-75 rounded-circle" src="/home/yash/projects/pmc/static/img/testimonial/img3.png">
+                                            </div>
+                                        </div>
+                                        <div class="content-inner">
+                                            <p class="description mb-2">Morbi quam enim, cursus non erat pretium veh icula
+                                                finibus ex
+                                                stibulum venenatis viverra dui Morbi quam enim, cursus non erat pretium veh
+                                                icula finibus ex stibulum venenatis viverra dui Morbi quam enim, cursus non
+                                                erat
+                                                pretium veh icula finibus ex stibulum venenatis viverra dui.</p>
+                                            <div class="author-info">
+                                                <h2 class="mb-0 fs-5 fw-bold lh-small"><a href="javascript:void(0)">Helen</a></h2>
+                                                <span>Engineer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="download section bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-xs-12">
+                        <div class="download-wrapper" style="margin-top: 100px;">
+                            <div>
+                                <div class="download-text">
+                                    <h4 class="mb-4 fs-3">Download Our PMC App</h4>
+                                    <p>Enjoy the PMC app in your hands by installing it your mobile. Never miss any
+                                        update regarding career </p>
+                                </div>
+                                <div class="downld-button mt-3">
+                                    <a href="javascript:void(0)" class="btn btn_border text-capitalize fw-bold me-2">
+                                        <i class="bi bi-apple float-start lh-base fs-3"></i> Download<br> 
+                                        <span>From Apple store</span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="btn btn-similar text-capitalize fw-bold me-2">
+                                        <i class="bi bi-google-play float-start lh-base fs-3"></i> Download <br> 
+                                        <span>From Play Store</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-xs-12">
+                        <div class="download-thumb">
+                            <img class="img-fluid" src="/home/yash/projects/pmc/static/img/app.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-Content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-xs-12">
+                        <div class="widget">
+                            <div class="footer-logo mb-3">
+                                <img src="/home/yash/projects/pmc/static/img/PMC-logo.png" alt="Plan My Career">
+                            </div>
+                            <div class="textwidget">
+                                <p>Plan My Career is a overall tool for your problems regaring your Career. We
+                                    provide the best career options that suits your standard</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-xs-12">
+                        <div class="widget">
+                            <h3 class="block-title text-white mb-3 fw-normal fs-5">Quick Links</h3>
+                            <ul class="menu w-50 float-start ps-0">
+                                <li class="d-block"><a href="javascript:void(0)">About Us</a></li>
+                                <li class="d-block"><a href="javascript:void(0)">Support</a></li>
+                                <li class="d-block"><a href="javascript:void(0)">License</a></li>
+                                <li class="d-block"><a href="javascript:void(0)">Contact</a></li>
+                            </ul>
+                            <ul class="menu w-50 float-start ps-0">
+                                <li class="d-block"><a href="javascript:void(0)">Terms &amp; Conditions</a></li>
+                                <li class="d-block"><a href="javascript:void(0)">Privacy</a></li>
+                                <li class="d-block"><a href="javascript:void(0)">Refferal Terms</a></li>
+                                <li class="d-block"><a href="javascript:void(0)">Product License</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-12">
+                        <div class="widget">
+                            <h3 class="block-title text-white mb-3 fw-normal fs-5">Subscribe Now</h3>
+                            <p>subscibe plan my career for all new updates</p>
+                            <form method="post" class="subs-form validate mt-1">
+                                <div class="form-group is-empty position-relative">
+                                    <input type="email" value="" name="Email" class="form-control w-100 text-white rounded-5"
+                                        placeholder="Enter Email..." required="">
+                                    <button type="submit" name="subscribe"
+                                        class="btn btn-similar sub-btn"><i class="bi bi-envelope"></i></button>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                            <ul class="mt-3 footer-social ps-0">
+                                <li class="d-inline-block me-3"><a class="facebook d-inline-block text-center rounded-circle text-white" href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
+                                </li>
+                                <li class="d-inline-block me-3"><a class="twitter d-inline-block text-center rounded-circle text-white" href="javascript:void(0)"><i class="bi bi-twitter-x"></i></a>
+                                </li>
+                                <li class="d-inline-block me-3"><a class="linkedin d-inline-block text-center rounded-circle text-white" href="javascript:void(0)"><i class="bi bi-linkedin"></i></a>
+                                </li>
+                                <li class="d-inline-block me-3"><a class="google-plus d-inline-block text-center rounded-circle text-white" href="javascript:void(0)"><i class="bi bi-google"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="site-info text-center">
+                            <p class="text-white lh-lg">Copyright reserved to Plan My Careers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="javascript:void(0)" class="back-to-top text-center z-3 position-fixed rounded-circle"><i class="bi bi-arrow-up-short text-white fs-3"></i></a>
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/jquery-touchswipe@latest/jquery.touchSwipe.min.js"></script>
+    <script src="/home/yash/projects/pmc/static/js/script.js"></script>
+</body>
+
+</html>

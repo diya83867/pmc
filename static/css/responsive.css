@@ -1,0 +1,103 @@
+@media(max-width: 767px) {
+    .contents-button {
+      width: 100%;
+      margin-left: 0px;
+      margin-top: 10px;
+    } 
+    .downld-button .btn {
+        margin-bottom: 30px;
+        margin-left: 88px;
+    }
+    .contents .hero-title {
+        font-size: 29px;
+    }
+    .back-to-top {
+        bottom: 44px;
+    }
+}
+
+@media (max-width: 991px) {
+    .dropdown-toggle {
+        width: 100%;
+        text-align: start;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .dropdown-toggle::after {
+        content: '';
+    }
+    .dropdown-menu::before {
+        display: none;
+    }
+    .dropdown-menu {
+        width: 100%;
+        left: 0 !important;
+        top: 0 !important;
+        border-radius: 10;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .navbarpcm .dropdown-menu {
+        --bs-dropdown-bg: unset!important;
+    }
+    .dropdown-toggle.dropdown-arrow-left[aria-expanded="true"]::after {
+        transform: rotate(270deg);
+    }
+    #collapsibleNavId {
+        height: 350px;
+        overflow-y: scroll;
+        z-index: 200;
+        overflow-x: hidden;
+    }
+    .collapse ul li, .collapsing ul li {
+        padding: 5px;
+    }
+    .navbar-scrolled #collapsibleNavId {
+        background-color: black;
+    }
+    .navbar-scrolled .dropdown-menu {
+        --bs-dropdown-bg: unset!important;
+    }
+    .navbar-scrolled .navbar-nav .nav-link {
+        color: white!important;
+    }
+    .download-wrapper {
+        margin-top: unset!important;
+    }
+    .download-text h4 {
+        font-size: 18px!important;
+        margin-bottom: 14px!important;
+    }
+    .browse-button .btn, .searchbar {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1255px) {
+    .btn_group .btn-similar:first-of-type {
+        margin-bottom: 10px;
+    }
+    .navbarpcm .navbar-nav .nav-link {
+        padding: 0 2px;
+        line-height: 37px;
+    }
+}
+
+@media (min-width: 1255px) and (max-width: 1363px) {
+    .btn_group .btn-similar:first-of-type {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1125px) {
+    .navbar-brand span {
+        display: none;
+    }
+}
